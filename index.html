@@ -5,54 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ruin Generator</title>
     <link rel="stylesheet" href="main.css"/>
-
-    <script>
-        function generateRuin() {
-            // Placeholder for ruin generation logic
-            alert('Generating ruin...');
-        }
-
-        function saveRuin() {
-            // Placeholder for saving the generated ruin
-            alert('Saving ruin...');
-        }
-
-        function loadRuin() {
-            // Placeholder for loading a saved ruin
-            alert('Loading ruin...');
-        }
-        function onClickAlert(event) {
-            console.log(event);
-            event.stopPropagation()
-        }
-    </script>
+    <script src="menu.js"></script>
 </head>
 <body>
-    <div id="mainMenu">
-        <div class="button" onclick="onClickAlert(event)">Option eeeeeeeeeeeeeeeee1</div>
-        <div class="button" onclick="alert('Option 2')">Option 2</div>
-        <div class="button" onclick="alert('Option 2')">Option 3</div>
-    </div>
-
-    <script>
-        document.addEventListener('contextmenu', (e) => {
-            e.preventDefault();
-            const menu = document.getElementById('mainMenu');
-            menu.style.display = 'block';
-            menu.style.left = `${e.pageX}px`;
-            menu.style.top = `${e.pageY}px`;
-        });
-
-        document.addEventListener('click', () => {
-            const menu = document.getElementById('mainMenu');
-            menu.style.display = 'none';
-        });
-
-        document.getElementById("mainMenu").childNodes.forEach(element => {
-            if (element.className == "button"){
-                element.title = element.innerText;
-            }
-        });
-    </script>
+    <div id="mainMenu"></div>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -11,6 +11,5 @@ function buttonCreator(
         clickHandler(event)
         event.stopPropagation()
     })
-    parent.appendChild(button);
-    
+    parent.appendChild(button);    
 }
