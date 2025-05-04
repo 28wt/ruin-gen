@@ -28,26 +28,27 @@
     </script>
 </head>
 <body>
-    <div id="contextMenu">
+    <div id="mainMenu">
         <div class="button" onclick="onClickAlert(event)">Option eeeeeeeeeeeeeeeee1</div>
         <div class="button" onclick="alert('Option 2')">Option 2</div>
+        <div class="button" onclick="alert('Option 2')">Option 3</div>
     </div>
 
     <script>
         document.addEventListener('contextmenu', (e) => {
             e.preventDefault();
-            const menu = document.getElementById('contextMenu');
+            const menu = document.getElementById('mainMenu');
             menu.style.display = 'block';
             menu.style.left = `${e.pageX}px`;
             menu.style.top = `${e.pageY}px`;
         });
 
         document.addEventListener('click', () => {
-            const menu = document.getElementById('contextMenu');
+            const menu = document.getElementById('mainMenu');
             menu.style.display = 'none';
         });
 
-        document.getElementById("contextMenu").childNodes.forEach(element => {
+        document.getElementById("mainMenu").childNodes.forEach(element => {
             if (element.className == "button"){
                 element.title = element.innerText;
             }

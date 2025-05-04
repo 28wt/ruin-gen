@@ -5,17 +5,26 @@ body, html {
     height: 100%;
     overflow: hidden;
     font-family: Arial, sans-serif;
+    background-color: #777777;
 }
 
-#contextMenu {
+#mainMenu {
     position: absolute;
     top: 10px;
     border-radius: 5px;
     display: none;
 }
 
-#contextMenu div.button {
-    background: #222;
+#mainMenu div:first-child{
+    border-radius: 8px 8px 0 0;
+}
+
+#mainMenu div:last-child{
+    border-radius: 0 0 8px 8px;
+}
+
+#mainMenu div.button {
+    background: #3b363b;
     color: #fff;
     border: 1px , black;
     padding: 3px;
@@ -25,8 +34,9 @@ body, html {
     overflow: hidden;
     text-wrap: nowrap;
     text-overflow: ellipsis;
+    text-align: center;
 }
 
-#contextMenu div.button:hover {
-    background: #555;
+#mainMenu div.button:hover {
+    background: #505050;
 }
