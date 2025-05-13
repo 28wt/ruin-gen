@@ -5,3 +5,4 @@ TODO:
 - actual generation
 - give site an icon
 - setup on github pages
+- add multiple pages to naviage between + easy format to make more
